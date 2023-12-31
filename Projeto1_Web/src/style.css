@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#121212,#212b46);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto 0;
+    height: 100vh;
+}
+
+.container #painelFav {
+    padding: 20px;
+    padding-top: 20px;
+    margin-top: 20px;
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+}
+
+.PainelFavoritos {
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: #999999;
+}
+
+.fas {
+    color:  #ccc;
+}
+
+.title{
+    font-size: 65px;
+    color: #fff;
+    animation: flipTitle 2s;
+    margin: 20px;   
+}
+
+@keyframes flipTitle{
+    from{
+        transform: rotateX(90deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
+}
+
+.containerInput{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right: 8px;
+}
+
+.containerInput input::placeholder{
+    color: #f1f1f1;
+}
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.buttonSearch:hover{
+  transform: scale(1.2);
+}
+
+.buttonCard {
+    background-color: #cccccc;
+    border: 2px solid #999999;
+    border-radius: 8px;
+    color: #000;
+    font-size: 16px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px    ;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width:620px){
+    .title{
+        font-size: 60px;
+    }
+    .main h2{
+        font-size: 28px;
+    }
+    .main{
+        width: 80%;
+        min-height: 250px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title {
+      font-size: 26 px; /* Tamanho da fonte para dispositivos móveis. Ajuste conforme necessário. */
+    }
+    .main  {
+        margin: auto;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .container {
+        margin: auto;
+        padding-top: 20px;
+    }
+  }
+  .buttonFavoritos {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-left: 8px;
+  }
+  
+  .buttonFavoritos:hover {
+    transform: scale(1.2);
+  }
+  
+  .atleta-favorito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .atleta-favorito img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .atleta-info {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .atleta-info h2 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .atleta-info p {
+    font-size: 16px;
+    color: #999;
+  }

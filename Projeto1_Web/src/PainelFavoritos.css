@@ -1,0 +1,25 @@
+.favoritos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .favorito-quadrado {
+    width: calc(50% - 20px); /* Define a largura do quadrado com margens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px    ;
+  }
+  
+  .favorito-quadrado img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
